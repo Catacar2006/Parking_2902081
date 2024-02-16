@@ -15,16 +15,15 @@ public class Registro {
     public Cupo cupo;
     public Vehiculo vehiculo;
     public Cliente cliente;
-    
+    public Empleado empleado;
 
     //Constructores 
     public Registro() {
         
     }
 
-
     public Registro(LocalDate fechaInicio, LocalTime horaInicio, LocalDate fechaFin, LocalTime horaFin, Long valor,
-            Cupo cupo, Vehiculo vehiculo, Cliente cliente) {
+            Cupo cupo, Vehiculo vehiculo, Cliente cliente, Empleado empleado) {
         this.fechaInicio = fechaInicio;
         this.horaInicio = horaInicio;
         this.fechaFin = fechaFin;
@@ -33,7 +32,10 @@ public class Registro {
         this.cupo = cupo;
         this.vehiculo = vehiculo;
         this.cliente = cliente;
+        this.empleado = empleado;
     }
+
+
 
 
 
